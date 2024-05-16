@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <title>Tech solutions lnc</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #f1e9e9;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color:rgb(19, 17, 17);
+   
+   
+}
+
+.navbar {
+    background-color:rgb(73, 71, 71);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 5rem;
+   
+}
+.logo{
+    color: #e8dada;
+    text-decoration: none;
+    font-weight: 600px;
+}
+.logo span {
+    color:rgb(237, 229, 229);
+}
+
+.left h1 {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: rgb(245, 223, 223);
+    line-height: 80px;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.right ul li a {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+
+.right ul li a:hover {
+    background-color:#131211;
+    border-radius: 7px;
+    color: rgb(136, 136, 138);
+}
+
+@media screen and (max-width:805px) {
+    .list {
+        width: 100%;
+        background-color: #141211;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        left: 100%;
+        transition: all 1s;
+        z-index: 1;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .blog-content{
+        flex-direction: column;
+    }
+}
+
+.contact-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+iframe{ 
+    display:flex ;
+}
+    
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid;
+    background-color: rgba(237, 198, 198, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+.field:hover{
+    background-color: rgba(244, 198, 198, 0.1);
+}
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #434040;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #7d7878;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: #121010;
+}
+footer{
+    background-color: #070606;
+}
+
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialsicon{
+    display: flex;
+    justify-content: center;
+}
+.socialsicon a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ebe1e1;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialsicon a i{
+    font-size: 2em;
+    color: rgb(35, 26, 26);
+    opacity: 0.9;
+}
+.socialsicon a:hover{
+    background-color: #171414;
+    transition: 0.5s;
+}
+.socialsicon a:hover i{
+    color: #f5e1e1;
+}
+.footernav{
+    margin: 30px 0;
+}
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: nonedisc;
+}
+.footernav ul li a{
+    color: #f5e5e5;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footernav ul li a:hover{
+    opacity: 1;
+}
+.footerbottom{
+    background-color: #3c3a39;
+    padding: 20px;
+    text-align: center;
+}
+.footerbottom p{
+    color: #0b0909;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width:700px) {
+    .footernav ul{
+        flex-direction: column;
+    }
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    
+}
+</style>
+
+      <body>
+        <header>
+          <nav class="navbar">
+              <div class="left">
+                  <h1><a href="#" class="logo">TECH <SPan>SOLONUTIS</SPan> <span>LNC </span></a></h1>
+              </div>
+              <div class="right">
+                  <input type="checkbox" id="check">
+                  <label for="check" class="checkBtn">
+                      <i class="fa fa-bars"></i>
+                  </label>
+                  <ul class="list">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="contact.html">contact</a></li>
+                      
+                      
+                  </ul>
+              </div>
+          </nav>
+        </header>
+        <div class="contact-container">
+            <div class="contact-box">
+                <div class="contact-left"></div>
+                <div class="contact-right">
+                    <h1>contact us</h1>
+                    <input type="text" class="field" placeholder=" Name">
+                    <input type="email" class="field" placeholder=" Email">
+                    <textarea class="field area" placeholder="Message"></textarea>
+                    <button class="btn">Send</button>
+                </div>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52702.08758421951!2d62.16987016309684!3d34.3535199605242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f3ce6a894be6cf7%3A0x9db9f81752d677c4!2sHerat%2C%20Afghanistan!5e0!3m2!1sen!2s!4v1715069329174!5m2!1sen!2s" width="1250" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="footercontainer">
+    <div class="socialsicon">
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-square-instagram"></i></i></a>
+      <a href=""><i class="fa-brands fa-telegram"></i></a>
+      <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  
+  </div>
+
+    
+</body>
+<footer class="footerbottom">
+  
+    <p>©2024 Tech Solutions lnc &copy;All rights resered <br>
+        <span class="designer"> Contact us: info @ techsolutions.com</span><br>
+        <span>|125-257-2576</span></p>
+</footer>

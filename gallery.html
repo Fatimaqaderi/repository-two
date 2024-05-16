@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" charset="width=device=width,initial-scale=1.0">
+    <link rel="icon"><a class="icon" href="icon.phg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Loge Online Shop</title>
+    
+    <style> 
+  body{
+    background-color: #372c2c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(91, 5, 5);
+    position: relative;
+    text-align: center;
+    
+
+}
+
+header {
+    background-color: #cac5bc;
+    padding: 5px ;
+    box-shadow:24px 24px 35px #4f3333,
+    -24px -24px 35px #8b7676;
+    border-radius: 10%;
+    
+}
+
+
+ul, a{
+    list-style: none;
+    margin: 0px;
+    padding:top 50px;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right
+    
+}
+
+nav ul li {
+    margin:  20px;
+    text-align: center;
+}
+
+nav ul li a {
+    color:rgb(145, 69, 69);
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5%;
+    transition: background-color 0.3s;
+    transition: 
+    scale 750ms ease-out
+    
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #764794;
+animation: slidernbw 5s linear infinite;
+}
+@keyframes slidernbw {
+to {
+background-position: 20vw;
+}
+} 
+
+
+
+nav ul li a :focus{
+    background-color: rgb(82, 82, 121);
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(45, 8, 8);
+    padding-left: 40px;
+}
+
+footer{
+   
+    position:fixed;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    padding: 1px;
+    border-radius: 5%;
+    background-color:#f4e0bf;
+    color: rgb(50, 31, 31);
+}
+
+p_footer{
+    font-size: 10px;
+    
+    
+}
+
+.title1{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+.title1:hover{
+     background-color: #3e2b49;
+animation: slidernbw 5s linear infinite;
+}
+@keyframes slidernbw {
+to {
+background-position: 20vw;
+}
+}
+
+.title{
+    text-align: left;
+}
+
+main{
+    margin: 3rem;
+}
+
+.product-categories{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    
+}
+
+.category{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 5px solid #edbaba;
+}
+
+.category div{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.category img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 38px;
+    background: #907a7a;
+    box-shadow:  34px 34px 45px #848484,
+             -34px -34px 45px #a48e8e;
+    filter: blur(5px);
+    transition: 
+    scale 750ms ease-out, filter 250ms ease-in-out;
+}
+
+
+.category img:hover{
+    scale: 1.15;
+    filter: blur(0);
+}
+
+.featured-products{
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    
+ 
+   
+}
+
+.product-card{
+    color: rgb(188, 142, 142);
+    background-color: rgb(218, 198, 198);
+    text-align: center;
+    border-radius: 5%;
+    
+}
+.product-card img{
+    width: 200px;
+    border-radius: 20%;
+    transition: 
+    scale 750ms ease-out
+    
+}
+.product-card:hover{
+    transform: rotate(10deg);
+    scale: 1.1;
+   
+
+}
+.product-card div{
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.product-card button{
+    background-color: #685574;
+    color: #c7b0b0;
+    width: 200px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5%;
+    transition: transform 0.2s;
+}
+.product-card button:hover{
+    background-color: #5d466c;
+animation: slidernbw 5s linear infinite;
+}
+@keyframes slidernbw {
+to {
+background-position: 20vw;
+}
+}
+
+
+.product-details{
+    display:grid;
+  
+   
+}
+
+.product-details div{
+    position: relative;
+    overflow: hidden;
+
+}
+.details img{
+    width: calc(100%);
+    height: 500px;
+    border-radius: 43px;
+    background: #a79292;
+    box-shadow:  34px 34px 45px #927f7f,
+                 -34px -34px 45px #f4dfdf;
+
+}
+
+.product-details button{
+    background-color: #2e0945;
+    color: #dbc7c7;
+    width: calc(100%);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.product-details button:hover{
+    background-color: #2e0945;
+    animation: slidernbw 5s linear infinite;
+}
+@keyframes slidernbw {
+    to {
+        background-position: 20vw;
+    }
+}
+.all-products{
+    display: grid;
+    grid-template-rows: auto;
+    
+}
+.all:hover{
+    scale: 1.1;
+}
+
+.all img{
+    width: calc(100%);
+    height: 500px;
+    border-radius: 5%;
+    transition: 
+    scale 750ms ease-out
+
+}
+
+.all-products button{
+    background-color: #240A34;
+    color: #4e2b2b;
+    width: calc(100%);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.all-products button:hover{
+    background-color: #240A34;
+animation: slidernbw 5s linear infinite;
+}
+@keyframes slidernbw {
+to {
+background-position: 20vw;
+}
+}
+
+
+.product-reviews{
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews{
+    display: flex;
+    margin-bottom: 20px;
+}
+.user-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.user-profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.comment{
+    font-size: 16px;
+    line-height: 1.4;
+}
+  
+
+        
+    </style>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="title1">Loge Shop</h1>
+            <ul class="list">
+                <li><a href="index.html"> 🏛</a></li>
+                <li><a href="index.html">💂</a></li>
+                <li><a href="index.html">🛒</a></li>
+                <li><a href="index.html">💎</a></li> 
+            </ul>
+            <main>
+                <section class="product-categories">
+                    <h1>Product Categories</h1>
+                    <div class="category">
+                        <img src="IMG_3037.JPG" alt="category 1">
+                        <h2 class="category-title">category 1</h2>
+                    </div>
+                    <div class="category">
+                        <img src="IMG_3036.JPG" alt="category 2">
+                        <h2>category 2</h2>
+                    </div>
+                </section>
+                <br>
+                <br>
+                <h1 class="title">Featured Products</h1>
+                <section class="featured-products">
+                    <div class="product-card">
+                        <img src="IMG_3024.JPG" alt="product 1">
+                        <h2>product 1</h2>
+                        <p>$56</p>
+                        <button> Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="IMG_3027.JPG" alt="product 2">
+                        <h2>product 2</h2>
+                        <p>$54</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="IMG_3028.JPG" alt="product 3">
+                        <h2>product 3</h2>
+                        <p>$43</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="IMG_3026.JPG" alt="product 4">
+                        <h2>product 4</h2>
+                        <p>$45</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="IMG_3029.JPG" alt="product 5">
+                        <h2>product 5</h2>
+                        <p>$42</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="IMG_3033.JPG" alt="product 6">
+                        <h2>product 6</h2>
+                        <p>$40</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </section>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <section class="all-products">
+                    <h1 class="title">All Products</h1>
+                    <div class="all">
+                        <img src="IMG_3027.JPG" alt="product 2">
+                        <h2>Nike brand</h2>
+                        <p>$34</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="all">
+                        <img src="IMG_3036.JPG" alt="product 2">
+                        <h2>Marco brand</h2>
+                        <p>$33</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </section>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <section class="product-details">
+                    <h1 class="title">Product Details</h1>
+                    <div class="details">
+                        <img src="IMG_3037.JPG" alt="product 1">
+                        <p>$50</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quia totam quo soluta. Cupiditate, odio laboriosam corporis aut vero dolore doloremque quis, exercitationem ullam quae eaque, tenetur similique sed unde?
+                        </p>
+                        <button>Add to Card</button>
+                    </div>
+                </section>
+                <br>
+                <br>
+                <br>
+                <section class="product-reviews">
+                    <h1 class="title">Product Reviews</h1>
+                    <div class="reviews">
+                        <div class="user-profile">
+                            <img src="CFOT8867.JPG" alt="user 1">
+                            <p>yaser jan</p>
+                        </div>
+                        <p class="comment">Great no problem  </p>
+                    </div>
+                    <div class="reviews">
+                        <div class="user-profile">
+                            <img src="WDQU6925.JPG" alt="user 1">
+                            <p>lesa jan</p>
+                        </div>
+                        <p class="comment">Niec I love you Loge Shop </p>
+                    </div>
+                   
+                </section>
+            </main>
+            </nav>
+        </header>
+           <footer>2024 Loge Shop☀</footer>
+        </head>
+    </body>
+</html>

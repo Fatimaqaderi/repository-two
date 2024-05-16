@@ -3,32 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <title>Tech solutions lnc</title>
-    </head> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="image/favicon (4).ico">
+        <title>Tech Solution Inc</title>
+    </head>
    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+   
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     color: #f4eeee;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 body{
-    height: 100vh;
     background-color:rgb(16, 16, 16);
-   
-   
 }
 
 .navbar {
-    background-color:rgb(26, 24, 24);
+    background-color:rgb(36, 35, 35);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -115,28 +113,243 @@ body{
 }
 
 
+.carousel-item {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.carousel-item.active {
+  transform: scale(1); 
+  opacity: 1; 
+}
 
+.bia {
+  margin: auto;
+  color: black; 
+  position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height:100px;
+    padding: 100px;
+}
+.header {
+  margin: auto;
+  padding: 5px;
+  background:  #1d1d1c;
+}
 
+.cards:hover{
+  background: #0e0d0d;
+  color: #fff;
+}
 
+.cd p{
+  color: #333;
+}
+.cd {
+  filter: grayscale(100%);
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  border-radius: 10px;
+  box-shadow:  8px 5px 10px #848484,
+  -8px -5px 10px  #111111;
+}
+.cd:hover{
+  filter: grayscale(0);
+  transform:translateY(-18px);  
+}
 
+.testimonial {
+  background-color: #1c1c1c;
+  padding: 60px;
+  border-radius: 5px;
+  margin: 10px;
+  }
     
+.icon {
+  background-color: #848484;
+  font-size: 10px;
+  color: #fff;
+}  
 
 
-
-
-
-
-
-
-
-
-
+h2{
+  text-align: center;
+  }
+hr{
+  width: 100px;
+  margin: 10px auto;
+  color:#131212;
+  }
   
+h4,p{
+  text-align: center;
+  font-size: 18px;
+  margin: 8px;
+  }
+ 
 
 
+.single-price{
+  background: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+  }
+.single-price h3{
+  margin: 0;
+  margin-top: -80px;
+  color: #333;
+  font-weight: 800;
+  }
+.single-price h4{
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  }
+.single-price h4 span.sup{
+  vertical-align: text-top;
+  font-size: 14px;
+  color: #333;
+  }
+.deal-top{
+  position: relative;
+  background: #0f0f0e;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 90px 34px 10px;
+  border-top: 40px solid #0b0b0a;
+  }
+.deal-top:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -50px;
+  width: 0;
+  height: 0;
+  border-top: 50px solid #10100f;
+  }
+.deal-bottom{
+  padding: 56px 16px 0;
+  }
+.deal-bottom p{
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-weight: 300;
+  margin-top: 16px;
+  border-top: 1px solid #0b0b0b;
+  padding-top: 16px;
+  }
+.btn a{
+  display: inline-block;
+  font-size: 20px;
+  color: #333;
+  background: #080808;
+  padding: 8px 24px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  }
+.single-price:hover{
+  background: #f4f2f0;
+  }
+.single-price:hover .deal-top{
+  background: #ffffff;
+  }
+.single-price:hover .deal-top:after{
+  border-top: 50px solid #ffffff;
+  }
+.single-price:hover .btn a{
+  background: #ffffff;
+  }
+  
+  @media (max-width: 567px) {
+    .single-price {
+      padding: 20px;
+      width:280px;
+      height:55vh;
+    }
+    .single-price h3 {
+      font-size: 20px;
+    }
+    .single-price h4 {
+      font-size:20px;
+    }
+    .single-price h4 span.sup {
+      font-size: 12px;
+    }
+    .deal-top {
+      padding: 80px 34px 10px;
+      border-top: 30px solid #121211;
+      
+    }
+    .deal-bottom {
+      padding: 7px 12px 5px;
+    }
+    .deal-bottom p {
+      font-size: 14px;
+    }
+    .btn a {
+      font-size: 16px;
+    }
+  }
 
+input[type="text"],
+input[type="email"] {
+  outline: none;
+  border: 2px solid ;
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: .3s;
+  }
+ 
+input[type="text"]:focus,
+input[type="email"]:focus{
+  width: 100%; 
+  border: 2px solid #111110 ;
+  background-color: #a4a2a2;
+}
+.area{
+  outline: none;
+  border: 2px solid;
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  transition: .3s;
+}
 
+.area:focus{
+  width: 100%;
+  border: 2px solid #727170 ;
+  background-color: #0f0f0f;
+}
+.button{
+  background: #faf6f3;
+}
+.button:hover{
+  background: #0c0c0c;
+}
+#map-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 8px;
+  padding-top: 56.25%;
+}
 
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
 footer{
     background-color: #262323;
 }
@@ -242,122 +455,111 @@ footer{
             </div>
         </nav>
       </header>  
-      
-
-      <section class="hero-section">
-        <div class="content">
-            <h1>Welcome to Tech Solutions lnc</h1>
-            <p>
-             Tech solutions lnc is a leading technology company specializing in software development digital solutions and IT consulting servicer with a team of experienced
-             <span> professionals we are dedincated to delivering innovative and customized solutions to our clients to help thern achieve their businss goals</span>
-            </p>
-            
+      <div class="container">
+        <h1>Welcome to <SPan> Tech Solution </SPan> <SPan> Inc.</SPan></h1>
+        <p>Tech Solutions Inc is a leading technology company specializing in sofware development digital Solutions and IT consulting services with a team of experienced 
+            professinoals we are dedicated to delivering innovative and customized Solutions to our clintes to help them achieve their business goals.
+        </p>
+        <div class="row">
+            <div class="col-lg">
+            </div>
         </div>
-      </section>
-        
-       <div class="carousel index " class="carousel slide" data-bs-ride="carousel">
-           <div class="carousel-inner">
-               <div class="carousel-item active" >
-                   <img src="IMG_E2751.JPG" class="d-block w-100 " alt="" >
-               </div>
-               <div class="carousel-item active">
-                   <img src="IMG_E2747.JPG"  class="d-block w-100 "alt="">
-               </div>
-               <div class="carousel-item">
-                   <img src="IMG_E2747.JPG"  class="d-block w-100  "alt="">
-               </div>
-               <div class="carousel-item">
-                   <img src="IMG_E2750.JPG"   class="d-block w-100  "alt="">
-               </div>
-           </div>
-       </div>
-   </div> 
-   <button class="carousel-control-prev" type="button" data-bs-target="#carousel index"> 
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">next</span>
-
-   </button>
-   <button class="">
-
-   </button>
-  
-
- 
-  
-  
-               
-                   
-  
-
-
-
-
-
-
-
-
-
-
-       
-       
-       
-       
-
-
-                   
-                     
-                   
-                   
-                   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-    
- 
+    </div>
+    <div id="carouselExampleControls" class="carousel slide container pointer-event" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item carousel">
+                <img src="photo_2024-05-15_12-11-56.jpg" class="d-block w-100 rounded" alt="slide 1">
+            </div>
+            <div class="carousel-item carousel active">
+                <img src="photo_2024-05-15_12-11-54.jpg" class="d-block w-100 rounded" alt="slide 2">
+            </div>
+            <div class="carousel-item carousel">
+                <img src="photo_2024-05-15_12-11-50.jpg" class="d-block w-100 rounded" alt="slide 3">
+            </div>
+            <div class="carousel-item carousel">
+                <img src="photo_2024-05-15_12-09-22.jpg" class="d-block w-100 rounded" alt="slide 4">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg"> 
+                <h2 class="text-center">About Tech Solution Inc. </h2>
+                <br>
+                <br>
+                <p>Tech Solutions Inc is a leading technology company specializing in sofware development digital Solutions and IT consulting services with a team of experienced 
+                    professinoals we are dedicated to delivering innovative and customized Solutions to our clintes to help them achieve their business goals..</p>
+            </div>           
+        </div>
+    </div>
+    <div class="container p-4">
+        <h1 class="text-center">Our Services</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 p-8">
+            <div class="col-lg-4 col-md-6 col-sm">
+                <div class="card mb-3 h-10 cards" >
+                    <div class="card-header text-center header"><i class="bi-gear"></i>   Custom Software Development</div>
+                    <div class="card-body">
+                        <h5 class="card-title"></h5> 
+                        <p class="card-text text-center">our team of designers and developments creates stunning wedsites than are user  friendly and responsive
+                         </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm">
+                <div class="card  mb-3 h-10  cards" >
+                    <div class="card-header text-center header"><i class=" bi-laptop bia"></i>   Web Design and Development</div>
+                    <div class="card-body">
+                        <p class="card-text text-center">our team of designers and developments creates stunning wedsites than are user  friendly and responsive
+                        . </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm">
+                <div class="card  mb-3 h-10  cards" >
+                    <div class="card-header text-center header"><i class=" bi-gear bia"></i>   IT Conruting</div>
+                    <div class="card-body">
+                        <p class="card-text text-center">our team of designers and developments creates stunning wedsites than are user  friendly and responsive
+                       . </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+           
+    <div class="container p-4">
+        <h2 class="text-center">Our Portfolio</h2>
+        <hr>
+        <div class="row row-cols-1 row-cols-md-3 g-4 p-6">
+            <div class="col-lg-4 col-md-6 col-sm">
+              <div class="card  mb-3 cd" >
+                <img src="photo_2024-05-15_12-09-22.jpg" class="card-img-top rounded" alt="project 1">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Project 1</h5>
+                  <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eveniet distinctio odio quis quibusdam nam sint? Eveniet ipsa deserunt aliquid excepturi dicta minus mollitia nesciunt consectetur quisquam, aliquam deleniti! Aut! </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm">
+              <div class="card  mb-3 cd" >
+                <img src="photo_2024-05-15_12-11-50.jpg" class="card-img-top rounded" alt="project 2">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Project 2</h5>
+                  <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat laboriosam accusamus corrupti maxime, incidunt dolorum? Nulla eaque consequatur numquam, veniam tenetur explicabo aut fugiat, minus quaerat, accusantium deserunt autem aperiam?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm">
+                <div class="card r mb-3 cd" >
+                  <img src="photo_2024-05-15_12-11-54.jpg" class="card-img-top rounded" alt="project 3">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Project 3</h5>
+                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quia commodi eius, deleniti voluptas reprehenderit sequi suscipit perferendis vitae amet numquam possimus quisquam, omnis unde quibusdam consequatur nostrum magni est?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
 
     <div class="footercontainer">
         <div class="socialsicon">
